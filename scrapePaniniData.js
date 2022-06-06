@@ -19,7 +19,6 @@ const scrapePaniniData = () => {
         if (err) console.log(err);
         else console.log('Panini data saved')
     })
-    console.log(data, 'DATA')
 }
 
 scrapePaniniData()
