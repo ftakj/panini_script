@@ -27,3 +27,6 @@ Project is now ready to run, user must supply HTML
 # Time to run the script
 - `node scrapePaniniData.js`
 - If everything goes smoothly, it should create a file called data.csv you can open in google sheets or excel, and view your entire set
+
+# Make a copy of this google doc and paste your checklist / results in to the proper area
+- https://docs.google.com/spreadsheets/d/1zVpE9HosdxyHI1IOtAJ13jeMD9ufDZSMWBHSasYW790/edit?usp=sharing
