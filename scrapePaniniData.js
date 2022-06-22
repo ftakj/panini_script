@@ -14,8 +14,15 @@ const scrapePaniniData = () => {
         const price = initialPriceString && !initialPriceString.toUpperCase().includes('MIN') ? initialPriceString.replace('Bought at', '') : ''
         data.push(name, number, price, "\r\n")
     }
-
-    fs.writeFile("data.csv", data, 'utf-8', (err) => {
+    
+    const dataString = data.reduce((d = '', c, i) => {
+        const noComma = (i - 1) % 4 === 0
+        
+        if (noComma) return d + c
+        return d + ',' + c
+    })
+    
+    fs.writeFile("data.csv", dataString, 'utf-8', (err) => {
         if (err) console.log(err);
         else console.log('Panini data saved')
     })
