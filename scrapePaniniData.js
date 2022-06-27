@@ -6,7 +6,7 @@ const scrapePaniniData = () => {
     const products = $('.crypto_product', PANINI_HTML)
     
     const data = ["\r\n", 'Name', 'Number', 'Cost', "\r\n"]
-    for (let i = 0; i < products.length - 1; i++) {
+    for (let i = 0; i < products.length; i++) {
         const product = products[i]
         const name = $('.a_name', product).text()
         const number = $('.c_number', product).text().split('/')[0].replace('[', '')
