@@ -21,11 +21,11 @@ const scrapePaniniData = () => {
     
     const dataString = data.reduce((d = '', c, i) => {
         const noComma = i % 6 === 0
-        if (noComma) console.log(i, c, noComma, 'NO COMMA?')
+    
         if (noComma && i) return d + c
         return d + ',' + c
     })
-    console.log(data, 'DATA?')
+    
     fs.writeFile("multipleSets.csv", dataString, 'utf-8', (err) => {
         if (err) console.log(err);
         else console.log('Panini multiple sets data saved')
