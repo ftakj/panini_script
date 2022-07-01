@@ -24,9 +24,13 @@ Project is now ready to run, user must supply HTML
 - Paste (CTRL+V) the copied HTML between the backticks ``
     - End result should look like const PANINI_HTML=`<html>.....` with all the code between the backticks
 
-# Time to run the script
+# Time to run the script - For just one set
 - `node scrapePaniniData.js`
 - If everything goes smoothly, it should create a file called data.csv you can open in google sheets or excel, and view your entire set
+
+# If you're scraping multiple sets
+- `node scrapeMultipleSets.js`
+- Should output a multipleSets.csv file that includes set name and mint number
 
 # Make a copy of this google doc and paste your checklist / results in to the proper area
 - https://docs.google.com/spreadsheets/d/1zVpE9HosdxyHI1IOtAJ13jeMD9ufDZSMWBHSasYW790/edit?usp=sharing
