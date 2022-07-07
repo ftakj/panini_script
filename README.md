@@ -4,6 +4,7 @@
 # To run
 - Clone this project locally
 - Open in your favorite code editor (VS Code for example)
+- Make sure you have Nodejs installed `https://nodejs.org/en/download/`
 - In the editor, open a terminal prompt and run `npm i cheerio fs`
 
 Project is now ready to run, user must supply HTML
