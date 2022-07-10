@@ -15,7 +15,7 @@ const scrapePaniniData = () => {
         
         const set = $('.crypto-product-title', product).text()
         const initialPriceString = $('.price', product).text()
-        const price = initialPriceString && !initialPriceString.toUpperCase().includes('MIN') ? initialPriceString.replace('Bought at', '') : ''
+        const price = initialPriceString && !initialPriceString.toUpperCase().includes('MIN') ? initialPriceString.replace('Bought at', '').replace('Buy Now', '') : ''
         data.push(name, number, mint, set, price, "\r\n")
     }
     

@@ -11,7 +11,7 @@ const scrapePaniniData = () => {
         const name = $('.a_name', product).text()
         const number = $('.c_number', product).text().split('/')[0].replace('[', '')
         const initialPriceString = $('.price', product).text()
-        const price = initialPriceString && !initialPriceString.toUpperCase().includes('MIN') ? initialPriceString.replace('Bought at', '') : ''
+        const price = initialPriceString && !initialPriceString.toUpperCase().includes('MIN') ? initialPriceString.replace('Bought at', '').replace('Buy Now', '') : ''
         data.push(name, number, price, "\r\n")
     }
     
